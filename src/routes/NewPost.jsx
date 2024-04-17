@@ -46,7 +46,7 @@ function submitHandler(event) {
       </p>
       <p className={classes.actions}>
       <button type="button" onClick={onCancel}>Cancel</button>
-      <button>Submit</button>
+      <button>Submit Now</button>
       </p>
     </form>
     </Modal>
