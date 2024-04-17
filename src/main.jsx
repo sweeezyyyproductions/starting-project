@@ -7,10 +7,16 @@ import NewPost from './routes/NewPost';
 import RootLayout from './routes/RootLayout';
 
 const router = createBrowserRouter([
-{path: '/', element: <RootLayout/>,
+{path: '/',
+ element: <RootLayout/>,
  children: [
-  {path: '/', element: <App/> },
-  {path: '/create-post', element: <NewPost />},
+  {
+    path: '/',
+    element: <App/>, 
+    children:[ {path: '/create-post', element: <NewPost />},
+    
+  ] },
+  
   ],
  },
 ]); 
